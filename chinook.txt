@@ -1,0 +1,10 @@
+1. Artist.find_by(name: 'Queen')
+2. Track.where(media_type_id: 3).count
+3. Genre.where(name: "Hip Hop/Rap")
+4. Track.where(genre_id: 17).count
+5. Track.sum(:milliseconds)
+6. Track.where(media_type_id: 1).maximum(:unit_price)
+7. Track.where(media_type_id: 1).maximum(:unit_price).pluck(:name)
+8. Artist.order(created_at: :asc).limit(2)
+9. Track.where.minimum(:unit_price)
+10.Track.where(genre_id: 15).where(media_type_id: 1)
